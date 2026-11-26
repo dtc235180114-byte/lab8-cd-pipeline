@@ -1,0 +1,9 @@
+# Build image KHÔNG multi-stage (để so sánh)
+# docker build -t devops-lab8-app:fat -f - . << 'EOF'
+FROM node:18-alpine
+WORKDIR /app
+COPY app/ .
+RUN npm install
+EXPOSE 3000
+CMD ["node","server.js"]
+# EOF
