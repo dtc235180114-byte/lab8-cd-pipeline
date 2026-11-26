@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_USER     = 'YOUR DOCKER USERNAME'   // ← ĐỔI thành username của bạn
+        DOCKER_USER     = 'khanglong'   // ← ĐỔI thành username của bạn
         DOCKER_IMAGE    = "${DOCKER_USER}/devops-lab8-app"
         DOCKER_TAG      = "${env.BUILD_NUMBER}"
         CONTAINER_NAME  = 'lab8-cd-production'
